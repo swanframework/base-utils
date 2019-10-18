@@ -86,7 +86,7 @@ public class ConstraintValidateUtil {
      */
     private static void validate(Object object, Validator validator) throws ValidationException{
         List<IllegalConstraint> list = check(object, validator);
-        if (list != null) {
+        if (list != null && list.size() > 0) {
             throw new ConstraintException("字段约束校验异常!", list);
         }
     }
