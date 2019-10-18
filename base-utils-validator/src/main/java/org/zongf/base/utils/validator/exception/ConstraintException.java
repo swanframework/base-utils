@@ -1,11 +1,17 @@
 package org.zongf.base.utils.validator.exception;
 
-import org.zongf.base.utils.validator.IllegalConstraint;
+import org.zongf.base.utils.validator.model.IllegalConstraint;
 import java.util.ArrayList;
 import java.util.List;
 
+/** 约束异常
+ * @since 1.0
+ * @author zongf
+ * @created 2019-10-18
+ */
 public class ConstraintException extends RuntimeException {
 
+    // 非法约束列表
     private List<IllegalConstraint> illegalConstraints;
 
     public ConstraintException() {

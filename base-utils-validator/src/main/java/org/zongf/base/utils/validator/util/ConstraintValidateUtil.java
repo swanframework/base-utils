@@ -1,7 +1,7 @@
 package org.zongf.base.utils.validator.util;
 
 import org.hibernate.validator.HibernateValidator;
-import org.zongf.base.utils.validator.IllegalConstraint;
+import org.zongf.base.utils.validator.model.IllegalConstraint;
 import org.zongf.base.utils.validator.exception.ConstraintException;
 
 import javax.validation.ConstraintViolation;

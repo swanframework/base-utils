@@ -1,11 +1,18 @@
-package org.zongf.base.utils.validator;
+package org.zongf.base.utils.validator.model;
 
 import javax.validation.ConstraintViolation;
 
+/** 非法约束
+ * @since 1.0
+ * @author zongf
+ * @created 2019-10-18
+ */
 public class IllegalConstraint implements Comparable<IllegalConstraint>{
 
+    // 非法约束属性名
     private String propertyName;
 
+    // 非法约束描述信息
     private String message;
 
     public IllegalConstraint() {
