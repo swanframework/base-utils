@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.zongf.base.utils.validator.exception.ConstraintException;
 import org.zongf.base.utils.validator.model.IllegalConstraint;
 import org.zongf.base.utils.validator.util.ConstraintValidateUtil;
+import org.zongf.base.utils.validator.util.IllegalConstraintUtil;
 import org.zongf.base.utils.validator.vo.User;
 import org.zongf.base.utils.validator.vo.UserBaseInfo;
 
@@ -41,7 +42,7 @@ public class ConstraintValidateUtilTest {
         try {
             ConstraintValidateUtil.validate(user);
         } catch (ConstraintException ex) {
-            ex.getIllegalConstraints().forEach(System.out::println);
+            System.out.println(IllegalConstraintUtil.getMessages(ex.getIllegalConstraints()));
         }
     }
 
