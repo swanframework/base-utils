@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="base-utils-common" />
         <module name="base-utils-jdbc" />
         <module name="base-utils-validator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="base-utils-common" target="8" />
       <module name="base-utils-jdbc" target="1.5" />
       <module name="base-utils-validator" target="8" />
     </bytecodeTargetLevel>
