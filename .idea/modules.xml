@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/base-utils.iml" filepath="$PROJECT_DIR$/.idea/base-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-utils-jdbc/base-utils-jdbc.iml" filepath="$PROJECT_DIR$/base-utils-jdbc/base-utils-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-utils-validator/base-utils-validator.iml" filepath="$PROJECT_DIR$/base-utils-validator/base-utils-validator.iml" />
+    </modules>
+  </component>
+</project>
