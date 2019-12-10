@@ -1,9 +1,15 @@
 package org.zongf.base.utils.validator.vo;
 
+import org.zongf.base.utils.validator.anno.ListNotEmpty;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class User {
 
@@ -18,6 +24,9 @@ public class User {
     @Valid
     @NotNull
     private UserBaseInfo baseInfo = new UserBaseInfo();
+
+    @ListNotEmpty
+    private Set<String> bookList = new HashSet<>();
 
     public User() {
     }

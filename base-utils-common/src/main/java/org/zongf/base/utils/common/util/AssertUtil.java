@@ -21,9 +21,7 @@ public class AssertUtil {
      * @created 2019-07-01
      */
     public static void notNull(Object object) {
-        if (object == null) {
-            throw new AssertException("对象为空!");
-        }
+        notNull("不能为null");
     }
 
     /**校验字符串非空, null和一组空格均视为空
@@ -34,9 +32,7 @@ public class AssertUtil {
      * @created 2019-07-01
      */
     public static void notEmpty(String str) {
-        if (str == null || "".equals(str.trim())) {
-            throw new AssertException("字符串为空!");
-        }
+        notEmpty("不能为空字符串");
     }
 
     /**校验集合非空, null和0个元素均视为空
@@ -47,9 +43,7 @@ public class AssertUtil {
      * @created 2019-07-01
      */
     public static void notEmpty(Collection collection) {
-        if (collection == null || collection.size() == 0) {
-            throw new AssertException("集合为空!");
-        }
+        notEmpty(collection, "不能为空集合");
     }
 
     /**校验Map非空, null和0个元素均视为空
@@ -60,9 +54,7 @@ public class AssertUtil {
      * @created 2019-07-01
      */
     public static void notEmpty(Map map) {
-        if (map == null || map.size() == 0) {
-            throw new AssertException("map为空!");
-        }
+        notEmpty(map, "不能为空map");
     }
 
     /**校验数组非空, null和0个元素均视为空
@@ -73,9 +65,7 @@ public class AssertUtil {
      * @created 2019-07-01
      */
     public static void notEmpty(Object[] array) {
-        if (array == null || array.length == 0) {
-            throw new AssertException("数组为空!");
-        }
+        notEmpty(array, "不能为空数组");
     }
 
     //************************************** 自定义异常信息 *****************************************

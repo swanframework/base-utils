@@ -51,7 +51,13 @@ public class ConstraintValidateUtilTest {
     public void validate_ok(){
         UserBaseInfo userBaseInfo = new UserBaseInfo(30, "Man");
         User user = new User(1001, "zhangsan", userBaseInfo);
-        ConstraintValidateUtil.validate(user);
+        List<IllegalConstraint> list = ConstraintValidateUtil.check(user);
+
+        for (IllegalConstraint illegalConstraint : list) {
+            System.out.println(illegalConstraint);
+        }
     }
+
+
 
 }
