@@ -12,7 +12,7 @@
     <properties>
         <httpclient.version>4.5.10</httpclient.version>
         <base.utils.common>1.0-SNAPSHOT</base.utils.common>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
