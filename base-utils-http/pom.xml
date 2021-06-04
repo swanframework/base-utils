@@ -10,7 +10,7 @@
 
 
     <properties>
-        <httpclient.version>4.5.10</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <base.utils.common>1.0-SNAPSHOT</base.utils.common>
         <junit.version>4.12</junit.version>
     </properties>
